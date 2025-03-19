@@ -2,7 +2,7 @@ This repo contains code which demonstrates a memory leak involving LinkTagHelper
 
 The memory leak occurs in the following circumstances:
 - The asp-append-version="true" tag is used on a <link/> element where the href points to a file which doesn't exist
-- WebApplicationFactory is used to start and stop instances of the Web Application repeatedly.
+- WebApplicationFactory is used to start and stop instances of the Web Application repeatedly with requests being made to the page containing the <link/> tag.
 
 # Running the example code
 1. Pull the code
